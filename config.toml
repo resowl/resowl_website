@@ -1,0 +1,131 @@
+baseURL       = "http://example.org/"
+languageCode  = "en-us"
+title         = "Resowl | Boutique QA Agency"
+theme         = "roxo"
+summarylength = 25
+
+# Site Menus
+[menu]
+   #Navbar Menus
+  [[menu.nav]]
+   name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Portfolio"
+    url     = "portfolio"
+    weight  = 3
+  #[[menu.nav]]
+  #  name    = "Blog"
+  #  url     = "blog"
+  #  weight  = 4
+  [[menu.nav]]
+    name    = "Get in touch"
+    url     = "contact"
+    weight  = 5
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
+  author = "Vasav Anandjiwala"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  #formspreeFormUrl  = "https://formspree.io/myykjpje"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Project Type"
+    placeholder_about_the_project = "About the Project"
+    send_message                  = "Send Message"
+
+    [[params.contactForm.projectType]]
+      value = "gd"
+      title  = "Graphics Design"
+    [[params.contactForm.projectType]]
+      value = "wd"
+      title  = "Web Design"
+  
+  #Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
+  
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero-background.jpg"
+    heading               = "Software Testing Services"
+    tagline               = "MAKE YOUR TEAM WITH US"
+    primary_button        = "Our Works"
+    primary_button_url    = "portfolio"
+    secondary_button      = "Contact Us"
+    secondary_button_url  = "contact"
+
+  [params.portfolio]
+    enable    = true
+    title     = "OUR RECENT WORKS"
+    subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
+
+  [params.call_to_action]
+    enable              = false
+    background_image    = "images/backgrounds/cta-background.jpg"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Submit Query"
+    primary_button_url  = "contact"
+    secondary_button    = "Not Convinced"
+    secondary_button_url = "portfolio"
+
+  [params.footer]
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      #address = "Ahmedabad,India"
+      phone   = "+91-9426458245"
+      #email   = "vasav@resowl.in"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Projects"
+          url  = "portfolio"
+        #[[params.footer.sitemap.link]]
+        #  name = "Blog"
+        #  url  = "blog"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Upwork"
+          url  = "https://www.upwork.com/freelancers/~0144897a09f73000d8"
+        [[params.footer.social.link]]
+          name = "Github"
+          url  = "https://github.com/resowl"
+        #[[params.footer.social.link]]
+        #  name = "Dribbble"
+        #  url  = "#"
+        #[[params.footer.social.link]]
+        #  name = "Instagram"
+        #  url  = "#"
+      # Footer Service
+      [params.footer.service]
+        title       = "We help companies:"
+        description = "Develop QA Solutions<br>Build CI/CD Pipelines<br>Robotic Process Automation"

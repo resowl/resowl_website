@@ -1,0 +1,8 @@
+enable  : true
+title   : Team that makes the difference.
+members  :
+  - image       : images/team/team-member-one.jpg
+    name        : Vasav Anandjiwala
+    designation : Founder
+    linkedIn    : https://www.linkedin.com/
+
